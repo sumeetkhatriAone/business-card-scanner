@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Business Card Scanner</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Tesseract.js for OCR -->
   <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
 </head>
 <body>
@@ -21,6 +20,7 @@
         📁 Upload Image
         <input type="file" id="fileInput" accept="image/*" hidden />
       </label>
+      <button id="debugBtn" class="btn ghost" hidden>🐞 Show Debug Info</button>
     </section>
 
     <video id="video" playsinline autoplay muted hidden></video>
@@ -32,7 +32,7 @@
       <h2>Tap a number to open WhatsApp</h2>
       <div id="numbers" class="numbers"></div>
       <div class="raw-text">
-        <h3>Raw OCR Text</h3>
+        <h3>Raw OCR Text (tap to toggle)</h3>
         <pre id="rawText"></pre>
       </div>
     </div>
