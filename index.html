@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Card Scanner</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Tesseract.js for OCR -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>📇 Card Scanner</h1>
+      <p class="subtitle">Scan a business card → tap a number → open WhatsApp</p>
+    </header>
+
+    <section class="controls">
+      <button id="cameraBtn" class="btn primary">📷 Scan with Camera</button>
+      <label for="fileInput" class="btn secondary">
+        📁 Upload Image
+        <input type="file" id="fileInput" accept="image/*" hidden />
+      </label>
+    </section>
+
+    <video id="video" playsinline autoplay muted hidden></video>
+    <canvas id="canvas" hidden></canvas>
+    <img id="preview" alt="preview" hidden />
+
+    <div id="status" class="status hidden"></div>
+    <div id="result" class="result hidden">
+      <h2>Tap a number to open WhatsApp</h2>
+      <div id="numbers" class="numbers"></div>
+      <div class="raw-text">
+        <h3>Raw OCR Text</h3>
+        <pre id="rawText"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
