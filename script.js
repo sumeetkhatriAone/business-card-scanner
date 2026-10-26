@@ -1,5 +1,5 @@
 // ===== Configuration =====
-const WHATSAPP_MESSAGE = "Hello, I am Atmoratech Pvt Ltd";
+const WHATSAPP_MESSAGE = "Hello, I am Atmoratech Pvt Ltd, We provide Customizable Software Solutions";
 
 // Optional: default country code for local numbers.
 // Set to "" to disable. Example: "91" for India, "1" for USA.
