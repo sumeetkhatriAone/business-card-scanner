@@ -1,5 +1,5 @@
 // ===== Configuration =====
-const WHATSAPP_MESSAGE = "Hello, I am Atmoratech Pvt Ltd";
+const WHATSAPP_MESSAGE = "Hello, I am Atmoratech Pvt Ltd, We provide customizable software solutions.";
 
 // ===== DOM Elements =====
 const cameraBtn = document.getElementById("cameraBtn");
