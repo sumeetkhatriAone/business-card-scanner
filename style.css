@@ -1,8 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -21,10 +17,7 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
-  font-size: 1.6rem;
-  text-align: center;
-}
+header h1 { font-size: 1.6rem; text-align: center; }
 
 .subtitle {
   text-align: center;
@@ -55,6 +48,7 @@ header h1 {
 .btn:active { transform: scale(0.97); }
 .btn.primary { background: #25D366; color: #fff; }
 .btn.secondary { background: #f0f0f0; color: #1a1a1a; }
+.btn.ghost { background: transparent; color: #888; border: 1px dashed #ccc; font-size: 0.85rem; padding: 8px; }
 
 video, #preview {
   width: 100%;
@@ -77,10 +71,7 @@ video, #preview {
 
 .hidden { display: none !important; }
 
-.result h2 {
-  font-size: 1.1rem;
-  margin: 16px 0 12px;
-}
+.result h2 { font-size: 1.1rem; margin: 16px 0 12px; }
 
 .numbers {
   display: flex;
@@ -99,6 +90,8 @@ video, #preview {
   cursor: pointer;
   transition: all 0.2s;
   font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .number-card:hover {
@@ -112,9 +105,7 @@ video, #preview {
   color: #fff;
 }
 
-.number-card .wa-icon {
-  font-size: 1.3rem;
-}
+.number-card .wa-icon { font-size: 1.3rem; }
 
 .no-numbers {
   padding: 16px;
@@ -124,14 +115,13 @@ video, #preview {
   border-radius: 10px;
 }
 
-.raw-text {
-  margin-top: 20px;
-}
+.raw-text { margin-top: 20px; }
 
 .raw-text h3 {
   font-size: 0.9rem;
   color: #666;
   margin-bottom: 6px;
+  cursor: pointer;
 }
 
 .raw-text pre {
@@ -143,4 +133,12 @@ video, #preview {
   word-wrap: break-word;
   max-height: 200px;
   overflow-y: auto;
+}
+
+/* Preview of cleaned image (helps debug) */
+.debug-img {
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: 2px solid #667eea;
 }
